@@ -1,0 +1,33 @@
+.alertModalWrapper {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: #667085;
+}
+
+.alertModalWrapper .icon {
+  position: relative;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(0deg, #fee4e2, #fee4e2),
+    linear-gradient(0deg, #fef3f2, #fef3f2);
+  border: 8px solid #fef3f2;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.alertModalWrapper h5 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #000;
+}
+
+.fs_12 {
+  font-size: 12px !important;
+} 
