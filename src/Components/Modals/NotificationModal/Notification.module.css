@@ -1,0 +1,38 @@
+.notificationWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-height: 450px;
+  overflow-y: auto;
+  overflow: hidden;
+}
+
+.notificationWrapper .notificationBox .notificationContainer {
+    position: relative;
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #D0D5DD
+}
+
+.notificationWrapper .notificationBox .notificationButton {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.notificationWrapper .notificationBox .notificationButton button {
+    font-size: 12px;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: #000;
+}
+
+.notificationWrapper .notificationBox .notificationButton button:first-child {
+    color: #667085;
+}

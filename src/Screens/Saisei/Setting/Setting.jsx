@@ -52,7 +52,7 @@ const Setting = () => {
                   <div className="d-flex align-items-center gap-3 flex-wrap">
                     Tushar.patel@whatever.com
                     <span
-                      className="text-decoration-underline text-black cursor-pointer"
+                      className="text-decoration-underline text-purple cursor-pointer"
                       onClick={() => setEmailModalShow(true)}
                     >
                       Change
@@ -68,7 +68,7 @@ const Setting = () => {
                   <div className="d-flex align-items-center gap-3 flex-wrap">
                     ********************
                     <span
-                      className="text-decoration-underline text-black cursor-pointer"
+                      className="text-decoration-underline text-purple cursor-pointer"
                       onClick={() => setPasswordModalShow(true)}
                     >
                       Change

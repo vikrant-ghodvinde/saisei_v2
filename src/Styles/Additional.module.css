@@ -1,0 +1,63 @@
+.tableWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.tableWrapper .tableHeading {
+  position: relative;
+  width: 100%;
+  padding: 16px;
+  background: #f9fafb;
+  border-bottom: 1px solid #eaecf0;
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.tableWrapper .tableBody {
+  position: relative;
+  width: 100%;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.tableWrapper .tableButtonCircle {
+  position: relative;
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #98a2b3 !important;
+  border: 1px dashed #d0d5dd;
+  background: #ffffff;
+  box-shadow: 0px 0px 0px 4px #f2f4f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tableWrapper .tableTextButton {
+  font-weight: 500;
+  border: 0 !important;
+  box-shadow: none !important;
+  background: none !important;
+  color: #b42318;
+}
+
+.tableWrapper .tableTextButton:disabled {
+  color: #fda29b;
+}
+
+.disabledText {
+  font-weight: 500;
+  color: #17171799 !important;
+}
+
+.bigTextContainer {
+  position: relative;
+  width: 100%;
+  height: 127px;
+  padding: 0 10px;
+  font-size: 14px;
+  overflow-y: auto;
+}

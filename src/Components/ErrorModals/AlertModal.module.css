@@ -14,11 +14,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.alertModalWrapper .icon.danger {
   background: linear-gradient(0deg, #fee4e2, #fee4e2),
     linear-gradient(0deg, #fef3f2, #fef3f2);
   border: 8px solid #fef3f2;
-  margin: auto;
-  margin-bottom: 20px;
+}
+
+.alertModalWrapper .icon.warning {
+  background: linear-gradient(0deg, #fef0c7, #fef0c7),
+    linear-gradient(0deg, #fffaeb, #fffaeb);
+  border: 8px solid #fffaeb;
+}
+
+.alertModalWrapper .icon.success {
+  background: linear-gradient(0deg, #d1fadf, #d1fadf),
+    linear-gradient(0deg, #ecfdf3, #ecfdf3);
+  border: 8px solid #ecfdf3;
 }
 
 .alertModalWrapper h5 {
@@ -30,4 +45,4 @@
 
 .fs_12 {
   font-size: 12px !important;
-} 
+}

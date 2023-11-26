@@ -1,6 +1,5 @@
 import Paginations from "Components/Paginations/Paginations";
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { Col, Container, Row, Dropdown, DropdownButton } from "react-bootstrap";
 import formStyle from "Styles/FormControl.module.css";
 import AllInvestors from "./Components/AllInvestors";
