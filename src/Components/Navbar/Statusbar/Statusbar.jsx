@@ -65,9 +65,9 @@ export function StatusbarMenu({ cancelPath }) {
               </div>
               <li>
                 <Link
-                  to="/team_company"
+                  to="/account_teamcompany"
                   className={
-                    location.pathname === "/team_company" ? styles.active : ""
+                    location.pathname === "/account_teamcompany" ? styles.active : ""
                   }
                 >
                   Company
@@ -75,9 +75,9 @@ export function StatusbarMenu({ cancelPath }) {
               </li>
               <li>
                 <Link
-                  to="/team_application"
+                  to="/account_teamapplication"
                   className={
-                    location.pathname === "/team_application" ? styles.active : ""
+                    location.pathname === "/account_teamapplication" ? styles.active : ""
                   }
                 >
                   Application

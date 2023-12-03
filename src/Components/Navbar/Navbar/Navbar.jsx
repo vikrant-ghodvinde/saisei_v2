@@ -37,9 +37,9 @@ export function SaiseiNavbar() {
               </div>
               <li>
                 <Link
-                  to="/company"
+                  to="/company_dashboard"
                   className={
-                    location.pathname === "/company" ? styles.active : ""
+                    location.pathname === "/company_dashboard" ? styles.active : ""
                   }
                 >
                   Company
@@ -47,9 +47,9 @@ export function SaiseiNavbar() {
               </li>
               <li>
                 <Link
-                  to="/documents"
+                  to="/company_documents"
                   className={
-                    location.pathname === "/documents" ? styles.active : ""
+                    location.pathname === "/company_documents" ? styles.active : ""
                   }
                 >
                   Documents
@@ -57,9 +57,9 @@ export function SaiseiNavbar() {
               </li>
               <li>
                 <Link
-                  to="/investor-list"
+                  to="/company_investorlist"
                   className={
-                    location.pathname === "/investor-list" ? styles.active : ""
+                    location.pathname === "/company_investorlist" ? styles.active : ""
                   }
                 >
                   Investor list
@@ -67,9 +67,9 @@ export function SaiseiNavbar() {
               </li>
               <li>
                 <Link
-                  to="/application"
+                  to="/company_application"
                   className={
-                    location.pathname === "/application" ? styles.active : ""
+                    location.pathname === "/company_application" ? styles.active : ""
                   }
                 >
                   Application
@@ -81,9 +81,9 @@ export function SaiseiNavbar() {
             <ul className={styles.menu}>
               <li>
                 <Link
-                  to="/setting"
+                  to="/company_setting"
                   className={
-                    location.pathname === "/setting" ? styles.active : ""
+                    location.pathname === "/company_setting" ? styles.active : ""
                   }
                 >
                   <FeatherIcon icon="settings" size={18} />
@@ -135,9 +135,9 @@ export function ProNavbar() {
               </div>
               <li>
                 <Link
-                  to="/dashboard"
+                  to="/account_dashboard"
                   className={
-                    location.pathname === "/dashboard" ? styles.active : ""
+                    location.pathname === "/account_dashboard" ? styles.active : ""
                   }
                 >
                   Dashboard
@@ -145,9 +145,9 @@ export function ProNavbar() {
               </li>
               <li>
                 <Link
-                  to="/application"
+                  to="/account_application"
                   className={
-                    location.pathname === "/application" ? styles.active : ""
+                    location.pathname === "/account_application" ? styles.active : ""
                   }
                 >
                   Application
@@ -155,9 +155,9 @@ export function ProNavbar() {
               </li>
               <li>
                 <Link
-                  to="/setting"
+                  to="/account_setting"
                   className={
-                    location.pathname === "/setting" ? styles.active : ""
+                    location.pathname === "/account_setting" ? styles.active : ""
                   }
                 >
                   Setting

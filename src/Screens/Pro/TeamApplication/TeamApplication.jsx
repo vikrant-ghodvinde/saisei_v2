@@ -308,122 +308,149 @@ const TeamApplication = () => {
                       <div className={`${formStyle.labelText} text-black`}>
                         Warm Introduction Code<span>*</span>
                       </div>
-                      <Table responsive>
-                        <thead className="table-dark">
-                          <tr>
-                            <th>File Name</th>
-                            <th>Category</th>
-                            <th></th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>
-                              <div className="d-flex align-items-center gap-3">
-                                <div>
-                                  <div>Dashboard</div>
-                                  <span className="text-secondary">720 KB</span>
+                      <div className="keep_table-overflow">
+                        <Table responsive>
+                          <thead className="table-dark">
+                            <tr>
+                              <th>File Name</th>
+                              <th>Category</th>
+                              <th></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div className="d-flex align-items-center gap-3">
+                                  <div>
+                                    <div>Dashboard</div>
+                                    <span className="text-secondary">
+                                      720 KB
+                                    </span>
+                                  </div>
                                 </div>
-                              </div>
-                            </td>
-                            <td>
-                              <span className="badge">Investment Memo</span>
-                            </td>
-                            <td>
-                              <button
-                                type="button"
-                                className="btn h-auto p-0 border-0"
-                              >
-                                <FeatherIcon icon="download-cloud" size={18} />
-                              </button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <div className="d-flex align-items-center gap-3">
-                                <div>
-                                  <div>Dashboard screenshot.jpg</div>
-                                  <span className="text-secondary">720 KB</span>
+                              </td>
+                              <td>
+                                <span className="badge">Investment Memo</span>
+                              </td>
+                              <td>
+                                <button
+                                  type="button"
+                                  className="btn h-auto p-0 border-0"
+                                >
+                                  <FeatherIcon
+                                    icon="download-cloud"
+                                    size={18}
+                                  />
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div className="d-flex align-items-center gap-3">
+                                  <div>
+                                    <div>Dashboard screenshot.jpg</div>
+                                    <span className="text-secondary">
+                                      720 KB
+                                    </span>
+                                  </div>
                                 </div>
-                              </div>
-                            </td>
-                            <td>
-                              <span className="badge">Investment Memo</span>
-                            </td>
-                            <td>
-                              <button
-                                type="button"
-                                className="btn h-auto p-0 border-0"
-                              >
-                                <FeatherIcon icon="download-cloud" size={18} />
-                              </button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <div className="d-flex align-items-center gap-3">
-                                <div>
-                                  <div>Dashboard prototype recording.mp4</div>
-                                  <span className="text-secondary">720 KB</span>
+                              </td>
+                              <td>
+                                <span className="badge">Investment Memo</span>
+                              </td>
+                              <td>
+                                <button
+                                  type="button"
+                                  className="btn h-auto p-0 border-0"
+                                >
+                                  <FeatherIcon
+                                    icon="download-cloud"
+                                    size={18}
+                                  />
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div className="d-flex align-items-center gap-3">
+                                  <div>
+                                    <div>Dashboard prototype recording.mp4</div>
+                                    <span className="text-secondary">
+                                      720 KB
+                                    </span>
+                                  </div>
                                 </div>
-                              </div>
-                            </td>
-                            <td>
-                              <span className="badge">Investment Memo</span>
-                            </td>
-                            <td>
-                              <button
-                                type="button"
-                                className="btn h-auto p-0 border-0"
-                              >
-                                <FeatherIcon icon="download-cloud" size={18} />
-                              </button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <div className="d-flex align-items-center gap-3">
-                                <div>
-                                  <div>Dashboard prototype FINAL.fig</div>
-                                  <span className="text-secondary">720 KB</span>
+                              </td>
+                              <td>
+                                <span className="badge">Investment Memo</span>
+                              </td>
+                              <td>
+                                <button
+                                  type="button"
+                                  className="btn h-auto p-0 border-0"
+                                >
+                                  <FeatherIcon
+                                    icon="download-cloud"
+                                    size={18}
+                                  />
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div className="d-flex align-items-center gap-3">
+                                  <div>
+                                    <div>Dashboard prototype FINAL.fig</div>
+                                    <span className="text-secondary">
+                                      720 KB
+                                    </span>
+                                  </div>
                                 </div>
-                              </div>
-                            </td>
-                            <td>
-                              <span className="badge">Investment Memo</span>
-                            </td>
-                            <td>
-                              <button
-                                type="button"
-                                className="btn h-auto p-0 border-0"
-                              >
-                                <FeatherIcon icon="download-cloud" size={18} />
-                              </button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <div className="d-flex align-items-center gap-3">
-                                <div>
-                                  <div>UX Design Guidelines.docx</div>
-                                  <span className="text-secondary">720 KB</span>
+                              </td>
+                              <td>
+                                <span className="badge">Investment Memo</span>
+                              </td>
+                              <td>
+                                <button
+                                  type="button"
+                                  className="btn h-auto p-0 border-0"
+                                >
+                                  <FeatherIcon
+                                    icon="download-cloud"
+                                    size={18}
+                                  />
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div className="d-flex align-items-center gap-3">
+                                  <div>
+                                    <div>UX Design Guidelines.docx</div>
+                                    <span className="text-secondary">
+                                      720 KB
+                                    </span>
+                                  </div>
                                 </div>
-                              </div>
-                            </td>
-                            <td>
-                              <span className="badge">Investment Memo</span>
-                            </td>
-                            <td>
-                              <button
-                                type="button"
-                                className="btn h-auto p-0 border-0"
-                              >
-                                <FeatherIcon icon="download-cloud" size={18} />
-                              </button>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </Table>
+                              </td>
+                              <td>
+                                <span className="badge">Investment Memo</span>
+                              </td>
+                              <td>
+                                <button
+                                  type="button"
+                                  className="btn h-auto p-0 border-0"
+                                >
+                                  <FeatherIcon
+                                    icon="download-cloud"
+                                    size={18}
+                                  />
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </Table>
+                      </div>
                     </div>
                   </div>
                 </div>

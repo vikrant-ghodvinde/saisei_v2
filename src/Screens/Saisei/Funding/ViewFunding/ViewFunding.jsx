@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Statusbar from "Components/Navbar/Statusbar/Statusbar";
 import {
   Col,
   Container,
@@ -11,6 +10,7 @@ import {
 } from "react-bootstrap";
 import formStyle from "Styles/FormControl.module.css";
 import Styles from "../Funding.module.css";
+import { Statusbar } from "Components/Navbar/Statusbar/Statusbar";
 
 const ViewFunding = () => {
   const [amountData, setAmountData] = useState({
