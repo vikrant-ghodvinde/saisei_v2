@@ -96,14 +96,16 @@ const Industry = () => {
                   </DropdownButton>
                 </Col>
                 <Col xs={12}>
-                  <Row className="gy-5 gx-2">
-                    <Col xs={12} sm={6}>
-                      <button className="btn btn-border w-100">Back</button>
-                    </Col>
-                    <Col xs={12} sm={6}>
-                      <button className="btn btn-dark w-100">Login</button>
-                    </Col>
-                  </Row>
+                  <div className="buttons-wrapper">
+                    <Row className="gy-5 gx-2">
+                      <Col xs={12} sm={6}>
+                        <button className="btn btn-border w-100">Back</button>
+                      </Col>
+                      <Col xs={12} sm={6}>
+                        <button className="btn btn-dark w-100">Login</button>
+                      </Col>
+                    </Row>
+                  </div>
                 </Col>
               </Row>
             </div>

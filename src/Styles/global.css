@@ -89,6 +89,12 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
+.buttons-wrapper {
+  width: 100%;
+  max-width: 480px;
+  margin: auto;
+}
+
 .btn-auto {
   min-height: auto !important;
 }
@@ -683,6 +689,10 @@ input {
 }
 
 /* DROPDOWN */
+.dropdown {
+  max-width: 480px;
+  margin: auto;
+}
 .dropdown button {
   position: relative;
   width: 100%;
@@ -715,14 +725,29 @@ input {
 }
 
 .dropdown .dropdown-menu .dropdown-item {
+  position: relative;
   color: #667085 !important;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .dropdown .dropdown-menu .dropdown-item:active,
+.dropdown .dropdown-menu .dropdown-item.active,
 .dropdown .dropdown-menu .dropdown-item:focus-visible {
   width: 100%;
   background-color: var(--bs-dropdown-link-hover-bg);
+}
+
+/* DROPDOWN CHECK ICON */
+.dropdown .dropdown-menu .dropdown-item.active::after {
+  content: "";
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background: url("../../public/assets/images/icons/check.svg") center no-repeat;
+  background-size: contain;
 }
 
 .inputHasDropdown {

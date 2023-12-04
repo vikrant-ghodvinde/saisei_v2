@@ -1,18 +1,6 @@
 import React, { lazy, Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { SaiseiNavbar, ProNavbar } from "Components/Navbar/Navbar/Navbar";
-// import AccountLogin from "";
-// import AccountSignup from "";
-// import ChooseIndustry from "";
-// import StageOfInvestment from "";
-// import AccountType from "";
-// import InvestmentCountries from "";
-// import Application from "";
-// import Setting from "";
-// import Dashboard from "";
-// import TeamMemberProfile from "";
-// import TeamApplication from "";
-// import TeamCompany from "";
 import PageLoader from "Components/PageLoader/PageLoader";
 
 // SAISEI ROUTES

@@ -13,6 +13,11 @@
   color: rgba(249, 0, 0, 1);
 }
 
+.formGroup {
+  max-width: 480px;
+  margin: auto;
+}
+
 .formGroup input {
   position: relative;
   width: 100%;

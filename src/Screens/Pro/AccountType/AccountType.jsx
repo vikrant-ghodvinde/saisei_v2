@@ -74,18 +74,20 @@ const AccountType = () => {
         </Row>
         <Row className="mt-0 text-center w-100">
           <Col md={12} lg={4} className="mx-auto">
-            <Row>
-              <Col xs={6}>
-                <button type="button" className="btn btn-border w-100">
-                  Back
-                </button>
-              </Col>
-              <Col xs={6}>
-                <button type="button" className="btn btn-dark w-100">
-                  NEXT
-                </button>
-              </Col>
-            </Row>
+            <div className="buttons-wrapper">
+              <Row>
+                <Col xs={6}>
+                  <button type="button" className="btn btn-border w-100">
+                    Back
+                  </button>
+                </Col>
+                <Col xs={6}>
+                  <button type="button" className="btn btn-dark w-100">
+                    NEXT
+                  </button>
+                </Col>
+              </Row>
+            </div>
           </Col>
         </Row>
         <Row className="text-center">

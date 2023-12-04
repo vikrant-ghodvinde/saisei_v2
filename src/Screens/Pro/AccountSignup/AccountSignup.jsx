@@ -67,7 +67,7 @@ const AccountSignup = () => {
                   </div>
                 </Col>
                 <Col xs={12}>
-                  <div className="w-100 d-flex align-items-center justify-content-center">
+                  <div className="buttons-wrapperd-flex align-items-center justify-content-center">
                     <button className="btn btn-dark">Sign Up</button>
                   </div>
                 </Col>

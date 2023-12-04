@@ -35,7 +35,7 @@ const AccountLogin = () => {
                   </div>
                 </Col>
                 <Col xs={12}>
-                  <div className="w-100 d-flex align-items-center justify-content-center mt-5">
+                  <div className="buttons-wrapper d-flex align-items-center justify-content-center mt-5">
                     <button className="btn btn-dark">Login</button>
                   </div>
                 </Col>

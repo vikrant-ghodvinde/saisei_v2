@@ -30,33 +30,15 @@ const MessageStatusModal = ({ show, setShow }) => {
             </Col>
             <Col xs={12}>
               <DropdownButton title="Status">
-                <Dropdown.Item className="d-flex align-items-center justify-content-between">
-                  Pending
-                </Dropdown.Item>
-                <Dropdown.Item className="d-flex align-items-center justify-content-between">
-                  Unsuccessful <FeatherIcon icon="check" size={18} />
-                </Dropdown.Item>
-                <Dropdown.Item className="d-flex align-items-center justify-content-between">
-                  Initial Communication
-                </Dropdown.Item>
-                <Dropdown.Item className="d-flex align-items-center justify-content-between">
-                  Due Diligence
-                </Dropdown.Item>
-                <Dropdown.Item className="d-flex align-items-center justify-content-between">
-                  Investment Committee
-                </Dropdown.Item>
-                <Dropdown.Item className="d-flex align-items-center justify-content-between">
-                  Term Sheet
-                </Dropdown.Item>
-                <Dropdown.Item className="d-flex align-items-center justify-content-between">
-                  Funded
-                </Dropdown.Item>
-                <Dropdown.Item className="d-flex align-items-center justify-content-between">
-                  Exit
-                </Dropdown.Item>
-                <Dropdown.Item className="d-flex align-items-center justify-content-between">
-                  Top Up
-                </Dropdown.Item>
+                <Dropdown.Item>Pending</Dropdown.Item>
+                <Dropdown.Item>Unsuccessful</Dropdown.Item>
+                <Dropdown.Item>Initial Communication</Dropdown.Item>
+                <Dropdown.Item>Due Diligence</Dropdown.Item>
+                <Dropdown.Item>Investment Committee</Dropdown.Item>
+                <Dropdown.Item>Term Sheet</Dropdown.Item>
+                <Dropdown.Item>Funded</Dropdown.Item>
+                <Dropdown.Item>Exit</Dropdown.Item>
+                <Dropdown.Item>Top Up</Dropdown.Item>
               </DropdownButton>
             </Col>
           </Row>

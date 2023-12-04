@@ -25,7 +25,7 @@ const Application = () => {
                     <Dropdown.Item onClick={() => setStatus("My Queue")}>
                       My Queue
                     </Dropdown.Item>
-                    <Dropdown.Item onClick={() => setStatus("All")}>
+                    <Dropdown.Item className="active" onClick={() => setStatus("All")}>
                       All
                     </Dropdown.Item>
                     <Dropdown.Item onClick={() => setStatus("Pending")}>
