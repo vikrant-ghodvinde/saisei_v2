@@ -114,6 +114,11 @@ const ApplyFunding = () => {
                                 title={amountData.amountRaisingCurrency}
                               >
                                 <Dropdown.Item
+                                  className={
+                                    amountData.amountRaisingCurrency === "One"
+                                      ? "active"
+                                      : ""
+                                  }
                                   onClick={() =>
                                     setAmountData({
                                       ...amountData,
@@ -124,6 +129,11 @@ const ApplyFunding = () => {
                                   One
                                 </Dropdown.Item>
                                 <Dropdown.Item
+                                  className={
+                                    amountData.amountRaisingCurrency === "Two"
+                                      ? "active"
+                                      : ""
+                                  }
                                   onClick={() =>
                                     setAmountData({
                                       ...amountData,
@@ -134,6 +144,11 @@ const ApplyFunding = () => {
                                   Two
                                 </Dropdown.Item>
                                 <Dropdown.Item
+                                  className={
+                                    amountData.amountRaisingCurrency === "Three"
+                                      ? "active"
+                                      : ""
+                                  }
                                   onClick={() =>
                                     setAmountData({
                                       ...amountData,
@@ -171,6 +186,11 @@ const ApplyFunding = () => {
                                 title={amountData.valuationCurrency}
                               >
                                 <Dropdown.Item
+                                  className={
+                                    amountData.valuationCurrency === "One"
+                                      ? "active"
+                                      : ""
+                                  }
                                   onClick={() =>
                                     setAmountData({
                                       ...amountData,
@@ -181,6 +201,11 @@ const ApplyFunding = () => {
                                   One
                                 </Dropdown.Item>
                                 <Dropdown.Item
+                                  className={
+                                    amountData.valuationCurrency === "Two"
+                                      ? "active"
+                                      : ""
+                                  }
                                   onClick={() =>
                                     setAmountData({
                                       ...amountData,
@@ -191,6 +216,11 @@ const ApplyFunding = () => {
                                   Two
                                 </Dropdown.Item>
                                 <Dropdown.Item
+                                  className={
+                                    amountData.valuationCurrency === "Three"
+                                      ? "active"
+                                      : ""
+                                  }
                                   onClick={() =>
                                     setAmountData({
                                       ...amountData,
@@ -262,7 +292,12 @@ const ApplyFunding = () => {
                               >
                                 Warm Introduction Code
                               </div>
-                              <input type="text" name="" id="" value="ABCD-ABCD" />
+                              <input
+                                type="text"
+                                name=""
+                                id=""
+                                value="ABCD-ABCD"
+                              />
                               <div className="text-secondary">
                                 Please provide the warm introduction code sent
                                 to you by the VC, if not please skip.
@@ -302,7 +337,11 @@ const ApplyFunding = () => {
                           <tr>
                             <td>
                               <div className="d-flex align-items-center gap-3">
-                                <Form.Check type="switch" className="colored" checked />
+                                <Form.Check
+                                  type="switch"
+                                  className="colored"
+                                  checked
+                                />
                                 <div>
                                   <div>Dashboard</div>
                                   <span className="text-secondary">720 KB</span>
@@ -316,7 +355,11 @@ const ApplyFunding = () => {
                           <tr>
                             <td>
                               <div className="d-flex align-items-center gap-3">
-                                <Form.Check type="switch" className="colored" checked />
+                                <Form.Check
+                                  type="switch"
+                                  className="colored"
+                                  checked
+                                />
                                 <div>
                                   <div>Dashboard screenshot.jpg</div>
                                   <span className="text-secondary">720 KB</span>
@@ -330,7 +373,11 @@ const ApplyFunding = () => {
                           <tr>
                             <td>
                               <div className="d-flex align-items-center gap-3">
-                                <Form.Check type="switch" className="colored" checked />
+                                <Form.Check
+                                  type="switch"
+                                  className="colored"
+                                  checked
+                                />
                                 <div>
                                   <div>Dashboard prototype recording.mp4</div>
                                   <span className="text-secondary">720 KB</span>
@@ -344,7 +391,11 @@ const ApplyFunding = () => {
                           <tr>
                             <td>
                               <div className="d-flex align-items-center gap-3">
-                                <Form.Check type="switch" className="colored" checked />
+                                <Form.Check
+                                  type="switch"
+                                  className="colored"
+                                  checked
+                                />
                                 <div>
                                   <div>Dashboard prototype FINAL.fig</div>
                                   <span className="text-secondary">720 KB</span>
@@ -358,7 +409,11 @@ const ApplyFunding = () => {
                           <tr>
                             <td>
                               <div className="d-flex align-items-center gap-3">
-                                <Form.Check type="switch" className="colored" checked />
+                                <Form.Check
+                                  type="switch"
+                                  className="colored"
+                                  checked
+                                />
                                 <div>
                                   <div>UX Design Guidelines.docx</div>
                                   <span className="text-secondary">720 KB</span>
@@ -439,7 +494,9 @@ const ApplyFunding = () => {
               </Col>
               <Col md={12} lg={6}>
                 <div className="h-100 d-flex align-items-end justify-content-end">
-                  <button type="button" className="btn btn-gradient">APPLY</button>
+                  <button type="button" className="btn btn-gradient">
+                    APPLY
+                  </button>
                 </div>
               </Col>
             </Row>

@@ -35,6 +35,7 @@ const UploadFileModal = ({ show, setShow }) => {
                   title={inputFields.documentCategory}
                 >
                   <Dropdown.Item
+                  className={inputFields.documentCategory === "One" ? "active" : ""}
                     onClick={() =>
                       setInputFields({
                         ...inputFields,
@@ -45,6 +46,7 @@ const UploadFileModal = ({ show, setShow }) => {
                     One
                   </Dropdown.Item>
                   <Dropdown.Item
+                  className={inputFields.documentCategory === "Two" ? "active" : ""}
                     onClick={() =>
                       setInputFields({
                         ...inputFields,
@@ -55,6 +57,7 @@ const UploadFileModal = ({ show, setShow }) => {
                     Two
                   </Dropdown.Item>
                   <Dropdown.Item
+                  className={inputFields.documentCategory === "Three" ? "active" : ""}
                     onClick={() =>
                       setInputFields({
                         ...inputFields,

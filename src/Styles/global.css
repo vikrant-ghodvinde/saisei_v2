@@ -91,7 +91,7 @@ a {
 
 .buttons-wrapper {
   width: 100%;
-  max-width: 480px;
+  max-width: 320px;
   margin: auto;
 }
 
@@ -690,7 +690,7 @@ input {
 
 /* DROPDOWN */
 .dropdown {
-  max-width: 480px;
+  max-width: 320px;
   margin: auto;
 }
 .dropdown button {

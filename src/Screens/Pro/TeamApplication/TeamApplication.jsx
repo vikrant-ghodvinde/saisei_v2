@@ -121,6 +121,7 @@ const TeamApplication = () => {
                                 disabled
                               >
                                 <Dropdown.Item
+                                className={amountData.amountRaisingCurrency === "One" ? "active" : ""}
                                   onClick={() =>
                                     setAmountData({
                                       ...amountData,
@@ -131,6 +132,7 @@ const TeamApplication = () => {
                                   One
                                 </Dropdown.Item>
                                 <Dropdown.Item
+                                className={amountData.amountRaisingCurrency === "Two" ? "active" : ""}
                                   onClick={() =>
                                     setAmountData({
                                       ...amountData,
@@ -141,6 +143,7 @@ const TeamApplication = () => {
                                   Two
                                 </Dropdown.Item>
                                 <Dropdown.Item
+                                className={amountData.amountRaisingCurrency === "Three" ? "active" : ""}
                                   onClick={() =>
                                     setAmountData({
                                       ...amountData,
@@ -180,6 +183,7 @@ const TeamApplication = () => {
                                 disabled
                               >
                                 <Dropdown.Item
+                                className={amountData.valuationCurrency === "One" ? "active" : ""}
                                   onClick={() =>
                                     setAmountData({
                                       ...amountData,
@@ -190,6 +194,7 @@ const TeamApplication = () => {
                                   One
                                 </Dropdown.Item>
                                 <Dropdown.Item
+                                className={amountData.valuationCurrency === "Two" ? "active" : ""}
                                   onClick={() =>
                                     setAmountData({
                                       ...amountData,
@@ -200,6 +205,7 @@ const TeamApplication = () => {
                                   Two
                                 </Dropdown.Item>
                                 <Dropdown.Item
+                                className={amountData.valuationCurrency === "Three" ? "active" : ""}
                                   onClick={() =>
                                     setAmountData({
                                       ...amountData,

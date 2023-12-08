@@ -27,6 +27,7 @@ const Industry = () => {
                     title={industryDetails.industry}
                   >
                     <Dropdown.Item
+                    className={industryDetails.industry === "One" ? "active" : ""}
                       onClick={() =>
                         setIndustryDetails({
                           ...industryDetails,
@@ -37,6 +38,7 @@ const Industry = () => {
                       One
                     </Dropdown.Item>
                     <Dropdown.Item
+                    className={industryDetails.industry === "Two" ? "active" : ""}
                       onClick={() =>
                         setIndustryDetails({
                           ...industryDetails,
@@ -47,6 +49,7 @@ const Industry = () => {
                       Two
                     </Dropdown.Item>
                     <Dropdown.Item
+                    className={industryDetails.industry === "Three" ? "active" : ""}
                       onClick={() =>
                         setIndustryDetails({
                           ...industryDetails,
@@ -64,6 +67,7 @@ const Industry = () => {
                     title={industryDetails.country}
                   >
                     <Dropdown.Item
+                    className={industryDetails.country === "India" ? "active" : ""}
                       onClick={() =>
                         setIndustryDetails({
                           ...industryDetails,
@@ -74,6 +78,7 @@ const Industry = () => {
                       India
                     </Dropdown.Item>
                     <Dropdown.Item
+                    className={industryDetails.country === "Africa" ? "active" : ""}
                       onClick={() =>
                         setIndustryDetails({
                           ...industryDetails,
@@ -84,6 +89,7 @@ const Industry = () => {
                       Africa
                     </Dropdown.Item>
                     <Dropdown.Item
+                    className={industryDetails.country === "US" ? "active" : ""}
                       onClick={() =>
                         setIndustryDetails({
                           ...industryDetails,

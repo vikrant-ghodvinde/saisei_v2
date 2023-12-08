@@ -2,8 +2,10 @@ import React from "react";
 import { Col, Dropdown, DropdownButton, Modal, Row } from "react-bootstrap";
 import formStyle from "Styles/FormControl.module.css";
 import FeatherIcon from "feather-icons-react/build/FeatherIcon";
+import { useState } from "react";
 
 const InviteMemberModal = ({ show, setShow }) => {
+  const [permission, setPermission] = useState("Permission");
   return (
     <Modal
       centered
@@ -37,9 +39,19 @@ const InviteMemberModal = ({ show, setShow }) => {
                 >
                   hidden
                 </label>
-                <DropdownButton title="Permission">
-                  <Dropdown.Item>Admin</Dropdown.Item>
-                  <Dropdown.Item>Investment</Dropdown.Item>
+                <DropdownButton title={permission}>
+                  <Dropdown.Item
+                    className={permission === "Admin" ? "active" : ""}
+                    onClick={() => setPermission("Admin")}
+                  >
+                    Admin
+                  </Dropdown.Item>
+                  <Dropdown.Item
+                    className={permission === "Investment" ? "active" : ""}
+                    onClick={() => setPermission("Investment")}
+                  >
+                    Investment
+                  </Dropdown.Item>
                 </DropdownButton>
               </div>
             </Col>
@@ -50,15 +62,25 @@ const InviteMemberModal = ({ show, setShow }) => {
               </div>
             </Col>
             <Col xs={6}>
-              <DropdownButton title="Permission">
-                <Dropdown.Item>Admin</Dropdown.Item>
-                <Dropdown.Item>Investment</Dropdown.Item>
+              <DropdownButton title={permission}>
+                <Dropdown.Item
+                  className={permission === "Admin" ? "active" : ""}
+                  onClick={() => setPermission("Admin")}
+                >
+                  Admin
+                </Dropdown.Item>
+                <Dropdown.Item
+                  className={permission === "Investment" ? "active" : ""}
+                  onClick={() => setPermission("Investment")}
+                >
+                  Investment
+                </Dropdown.Item>
               </DropdownButton>
             </Col>
             <Col xs={12}>
               <div className="my-2 d-flex align-items-center justify-content-center">
                 <button type="button" className="btn h-auto p-0">
-                    <FeatherIcon icon="plus" size={18} /> Add another
+                  <FeatherIcon icon="plus" size={18} /> Add another
                 </button>
               </div>
             </Col>

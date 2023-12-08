@@ -3,6 +3,7 @@ import { Col, Dropdown, DropdownButton, Modal, Row } from "react-bootstrap";
 import formStyle from "Styles/FormControl.module.css";
 import Styles from "./AlertModal.module.css";
 import FeatherIcon from "feather-icons-react/build/FeatherIcon";
+import { useState } from "react";
 
 export function AccountDelete({ show, setShow }) {
   return (
@@ -150,6 +151,7 @@ export function Subscribe({ show, setShow }) {
 }
 
 export function AllocateTeam({ show, setShow }) {
+  const [teamMember, setTeamMember] = useState("Select team member");
   return (
     <Modal centered show={show} onHide={() => setShow(false)}>
       <Modal.Body>
@@ -166,10 +168,25 @@ export function AllocateTeam({ show, setShow }) {
                 </label>
                 <div className="dropdownHasIcon">
                   <FeatherIcon icon="user" size={18} />
-                  <DropdownButton title="Select team member">
-                    <Dropdown.Item>Team Member</Dropdown.Item>
-                    <Dropdown.Item>Team Member</Dropdown.Item>
-                    <Dropdown.Item>Team Member</Dropdown.Item>
+                  <DropdownButton title={teamMember}>
+                    <Dropdown.Item
+                      className={teamMember === "Team Member" ? "active" : ""}
+                      onClick={() => setTeamMember("Team Member")}
+                    >
+                      Team Member
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      className={teamMember === "Team Member" ? "active" : ""}
+                      onClick={() => setTeamMember("Team Member")}
+                    >
+                      Team Member
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      className={teamMember === "Team Member" ? "active" : ""}
+                      onClick={() => setTeamMember("Team Member")}
+                    >
+                      Team Member
+                    </Dropdown.Item>
                   </DropdownButton>
                 </div>
               </div>

@@ -43,6 +43,7 @@ const InvestorList = () => {
                     title={options.sector}
                   >
                     <Dropdown.Item
+                    className={options.sector === "One" ? "active" : ""}
                       onClick={() =>
                         setOptions({
                           ...options,
@@ -53,6 +54,7 @@ const InvestorList = () => {
                       One
                     </Dropdown.Item>
                     <Dropdown.Item
+                    className={options.sector === "Two" ? "active" : ""}
                       onClick={() =>
                         setOptions({
                           ...options,
@@ -63,6 +65,7 @@ const InvestorList = () => {
                       Two
                     </Dropdown.Item>
                     <Dropdown.Item
+                    className={options.sector === "Three" ? "active" : ""}
                       onClick={() =>
                         setOptions({
                           ...options,
@@ -83,6 +86,7 @@ const InvestorList = () => {
                     title={options.stage}
                   >
                     <Dropdown.Item
+                    className={options.stage === "One" ? "active" : ""}
                       onClick={() =>
                         setOptions({
                           ...options,
@@ -93,6 +97,7 @@ const InvestorList = () => {
                       One
                     </Dropdown.Item>
                     <Dropdown.Item
+                    className={options.stage === "Two" ? "active" : ""}
                       onClick={() =>
                         setOptions({
                           ...options,
@@ -103,6 +108,7 @@ const InvestorList = () => {
                       Two
                     </Dropdown.Item>
                     <Dropdown.Item
+                    className={options.stage === "Three" ? "active" : ""}
                       onClick={() =>
                         setOptions({
                           ...options,
@@ -123,6 +129,7 @@ const InvestorList = () => {
                     title={options.type}
                   >
                     <Dropdown.Item
+                    className={options.type === "One" ? "active" : ""}
                       onClick={() =>
                         setOptions({
                           ...options,
@@ -133,6 +140,7 @@ const InvestorList = () => {
                       One
                     </Dropdown.Item>
                     <Dropdown.Item
+                    className={options.type === "Two" ? "active" : ""}
                       onClick={() =>
                         setOptions({
                           ...options,
@@ -143,6 +151,7 @@ const InvestorList = () => {
                       Two
                     </Dropdown.Item>
                     <Dropdown.Item
+                    className={options.type === "Three" ? "active" : ""}
                       onClick={() =>
                         setOptions({
                           ...options,
@@ -163,6 +172,7 @@ const InvestorList = () => {
                     title={options.country}
                   >
                     <Dropdown.Item
+                    className={options.country === "India" ? "active" : ""}
                       onClick={() =>
                         setOptions({
                           ...options,
@@ -173,6 +183,7 @@ const InvestorList = () => {
                       One
                     </Dropdown.Item>
                     <Dropdown.Item
+                    className={options.country === "US" ? "active" : ""}
                       onClick={() =>
                         setOptions({
                           ...options,
@@ -183,6 +194,7 @@ const InvestorList = () => {
                       Two
                     </Dropdown.Item>
                     <Dropdown.Item
+                    className={options.country === "Uk" ? "active" : ""}
                       onClick={() =>
                         setOptions({
                           ...options,

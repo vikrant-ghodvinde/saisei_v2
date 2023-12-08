@@ -22,30 +22,54 @@ const Application = () => {
               <Col sm={12} md={6} lg={4} xl={2}>
                 <div className={formStyle.formGroup}>
                   <DropdownButton id="dropdown-basic-button" title={status}>
-                    <Dropdown.Item onClick={() => setStatus("My Queue")}>
+                    <Dropdown.Item
+                      className={status === "" ? "active" : ""}
+                      onClick={() => setStatus("My Queue")}
+                    >
                       My Queue
                     </Dropdown.Item>
-                    <Dropdown.Item className="active" onClick={() => setStatus("All")}>
+                    <Dropdown.Item
+                      className={status === "All" ? "active" : ""}
+                      onClick={() => setStatus("All")}
+                    >
                       All
                     </Dropdown.Item>
-                    <Dropdown.Item onClick={() => setStatus("Pending")}>
+                    <Dropdown.Item
+                      className={status === "Pending" ? "active" : ""}
+                      onClick={() => setStatus("Pending")}
+                    >
                       Pending
                     </Dropdown.Item>
-                    <Dropdown.Item onClick={() => setStatus("Unsuccessful")}>
+                    <Dropdown.Item
+                      className={status === "Unsuccessful" ? "active" : ""}
+                      onClick={() => setStatus("Unsuccessful")}
+                    >
                       Unsuccessful
                     </Dropdown.Item>
                     <Dropdown.Item
+                      className={
+                        status === "Initial Communication" ? "active" : ""
+                      }
                       onClick={() => setStatus("Initial Communication")}
                     >
                       Initial Communication
                     </Dropdown.Item>
-                    <Dropdown.Item onClick={() => setStatus("Due Diligence")}>
+                    <Dropdown.Item
+                      className={status === "Due Diligence" ? "active" : ""}
+                      onClick={() => setStatus("Due Diligence")}
+                    >
                       Due Diligence
                     </Dropdown.Item>
-                    <Dropdown.Item onClick={() => setStatus("Funded")}>
+                    <Dropdown.Item
+                      className={status === "Funded" ? "active" : ""}
+                      onClick={() => setStatus("Funded")}
+                    >
                       Funded
                     </Dropdown.Item>
-                    <Dropdown.Item onClick={() => setStatus("Warm")}>
+                    <Dropdown.Item
+                      className={status === "Warm" ? "active" : ""}
+                      onClick={() => setStatus("Warm")}
+                    >
                       Warm
                     </Dropdown.Item>
                   </DropdownButton>
@@ -56,7 +80,9 @@ const Application = () => {
                   <span>
                     Your Account is Inactive. Please Subscribe to Activate
                   </span>
-                  <button type="button">Fix now <FeatherIcon icon="arrow-right" size={18} /></button>
+                  <button type="button">
+                    Fix now <FeatherIcon icon="arrow-right" size={18} />
+                  </button>
                 </div>
               </Col>
             </Row>

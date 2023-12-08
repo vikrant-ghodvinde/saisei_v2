@@ -1,7 +1,9 @@
 import React from "react";
+import { useState } from "react";
 import { Col, Dropdown, DropdownButton, Modal, Row } from "react-bootstrap";
 
 const SendOtpModal = ({ show, setShow }) => {
+  const [country, setCountry] = useState("US");
   return (
     <Modal centered show={show} onHide={() => setShow(false)}>
       <Modal.Body>
@@ -12,10 +14,25 @@ const SendOtpModal = ({ show, setShow }) => {
           <Row className="gy-3 my-4">
             <Col xs={12}>
               <div className="inputHasDropdownPhone">
-                <DropdownButton id="dropdown-basic-button" title="US">
-                  <Dropdown.Item>IN</Dropdown.Item>
-                  <Dropdown.Item>UK</Dropdown.Item>
-                  <Dropdown.Item>AU</Dropdown.Item>
+                <DropdownButton id="dropdown-basic-button" title={country}>
+                  <Dropdown.Item
+                    className={country === "IN" ? "active" : ""}
+                    onClick={() => setCountry("IN")}
+                  >
+                    IN
+                  </Dropdown.Item>
+                  <Dropdown.Item
+                    className={country === "UK" ? "active" : ""}
+                    onClick={() => setCountry("UK")}
+                  >
+                    UK
+                  </Dropdown.Item>
+                  <Dropdown.Item
+                    className={country === "AU" ? "active" : ""}
+                    onClick={() => setCountry("AU")}
+                  >
+                    AU
+                  </Dropdown.Item>
                 </DropdownButton>
                 <input
                   type="number"

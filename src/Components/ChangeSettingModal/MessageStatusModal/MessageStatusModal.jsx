@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, Dropdown, DropdownButton, Modal, Row } from "react-bootstrap";
 import formStyle from "Styles/FormControl.module.css";
-import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 
 const MessageStatusModal = ({ show, setShow }) => {
+  const [status, setStatus] = useState("Status");
   return (
     <Modal centered show={show} onHide={() => setShow(false)}>
       <Modal.Body>
@@ -29,16 +29,61 @@ const MessageStatusModal = ({ show, setShow }) => {
               </div>
             </Col>
             <Col xs={12}>
-              <DropdownButton title="Status">
-                <Dropdown.Item>Pending</Dropdown.Item>
-                <Dropdown.Item>Unsuccessful</Dropdown.Item>
-                <Dropdown.Item>Initial Communication</Dropdown.Item>
-                <Dropdown.Item>Due Diligence</Dropdown.Item>
-                <Dropdown.Item>Investment Committee</Dropdown.Item>
-                <Dropdown.Item>Term Sheet</Dropdown.Item>
-                <Dropdown.Item>Funded</Dropdown.Item>
-                <Dropdown.Item>Exit</Dropdown.Item>
-                <Dropdown.Item>Top Up</Dropdown.Item>
+              <DropdownButton title={status}>
+                <Dropdown.Item
+                  className={status === "Pending" ? "active" : ""}
+                  onClick={() => setStatus("Pending")}
+                >
+                  Pending
+                </Dropdown.Item>
+                <Dropdown.Item
+                  className={status === "Unsuccessful" ? "active" : ""}
+                  onClick={() => setStatus("Unsuccessful")}
+                >
+                  Unsuccessful
+                </Dropdown.Item>
+                <Dropdown.Item
+                  className={status === "Initial Communication" ? "active" : ""}
+                  onClick={() => setStatus("Initial Communication")}
+                >
+                  Initial Communication
+                </Dropdown.Item>
+                <Dropdown.Item
+                  className={status === "Due Diligence" ? "active" : ""}
+                  onClick={() => setStatus("Due Diligence")}
+                >
+                  Due Diligence
+                </Dropdown.Item>
+                <Dropdown.Item
+                  className={status === "Investment Committee" ? "active" : ""}
+                  onClick={() => setStatus("Investment Committee")}
+                >
+                  Investment Committee
+                </Dropdown.Item>
+                <Dropdown.Item
+                  className={status === "Term Sheet" ? "active" : ""}
+                  onClick={() => setStatus("Term Sheet")}
+                >
+                  Term Sheet
+                </Dropdown.Item>
+                <Dropdown.Item
+                  className={status === "Funded" ? "active" : ""}
+                  onClick={() => setStatus("Funded")}
+                >
+                  Funded
+                </Dropdown.Item>
+                <Dropdown.Item
+                  className={status === "Exit" ? "active" : ""}
+                  onClick={() => setStatus("Exit")}
+                >
+                  Exit
+                </Dropdown.Item>
+                <Dropdown.Item
+                  className={status === "Top Up" ? "active" : ""}
+                  onClick={() => setStatus("Top Up")}
+                >
+                  Top Up
+                </Dropdown.Item>
               </DropdownButton>
             </Col>
           </Row>

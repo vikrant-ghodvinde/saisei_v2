@@ -1,8 +1,10 @@
 import React from "react";
+import { useState } from "react";
 import { Col, Dropdown, DropdownButton, Modal, Row } from "react-bootstrap";
 import formStyle from "Styles/FormControl.module.css";
 
 const ChangePhone = ({ show, setShow }) => {
+  const [phoneCountry, setPhoneCountry] = useState("US");
   return (
     <Modal centered show={show} onHide={() => setShow(false)}>
       <Modal.Body>
@@ -24,10 +26,25 @@ const ChangePhone = ({ show, setShow }) => {
                 Phone number
               </div>
               <div className="inputHasDropdownPhone">
-                <DropdownButton id="dropdown-basic-button" title="US">
-                  <Dropdown.Item>IN</Dropdown.Item>
-                  <Dropdown.Item>UK</Dropdown.Item>
-                  <Dropdown.Item>AU</Dropdown.Item>
+                <DropdownButton id="dropdown-basic-button" title={phoneCountry}>
+                  <Dropdown.Item
+                    className={phoneCountry === "IN" ? "active" : ""}
+                    onClick={() => setPhoneCountry("IN")}
+                  >
+                    IN
+                  </Dropdown.Item>
+                  <Dropdown.Item
+                    className={phoneCountry === "UK" ? "active" : ""}
+                    onClick={() => setPhoneCountry("UK")}
+                  >
+                    UK
+                  </Dropdown.Item>
+                  <Dropdown.Item
+                    className={phoneCountry === "AU" ? "active" : ""}
+                    onClick={() => setPhoneCountry("AU")}
+                  >
+                    AU
+                  </Dropdown.Item>
                 </DropdownButton>
                 <input
                   type="number"
